@@ -2,7 +2,7 @@ import numpy as np
 
 def my_cross_entropy(p,q):
     q_cor = list(map(lambda x: x + 1e-7, q))
-    return -np.sum(p * np.log(q))
+    return -np.sum(p * np.log(q_cor))
 
 a = [0.7, 0.075, 0.075, 0.075, 0.075]
 b = [0.2, 0.2, 0.2, 0.2, 0.2]
